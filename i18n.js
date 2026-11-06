@@ -1,22 +1,23 @@
 /* Reviewed, local translations. No external service or runtime download. */
 (() => {
   'use strict';
-  const dictionary = window.DECK_EN || {};
+  const dictionary = window.DECK_FR || {};
   const textState = new WeakMap();
   const attrState = new WeakMap();
   const linkState = new WeakMap();
-  const storageKey = 'black-alps-language';
-  let language = 'fr';
+  // A new preference key makes English primary for visitors of the former FR site.
+  const storageKey = 'black-alps-language-v2';
+  let language = 'en';
   let started = false;
   function translate(value) {
-    if (language === 'fr') return value;
+    if (language === 'en') return value;
     const trimmed = value.trim();
     let translated = dictionary[trimmed];
     if (translated === undefined) {
       if (/^SLIDE \d+\s*\/\s*\d+ ·/.test(trimmed)) {
-        translated = trimmed.replace(/secondes/g, 'seconds').replace(/ÉTAPE/g, 'STEP');
-      } else if (trimmed.startsWith('Ensuite : ')) {
-        translated = 'Next: ' + translate(trimmed.slice(10));
+        translated = trimmed.replace(/seconds/g, 'secondes').replace(/STEP/g, 'ÉTAPE');
+      } else if (trimmed.startsWith('Next: ')) {
+        translated = 'Ensuite : ' + translate(trimmed.slice(6));
       } else return value;
     }
     return value.slice(0, value.indexOf(trimmed)) + translated + value.slice(value.indexOf(trimmed) + trimmed.length);
@@ -28,8 +29,8 @@
     while ((node = walker.nextNode())) {
       if (node.parentElement?.closest('script,style,noscript,[data-no-translate]')) continue;
       let state = textState.get(node);
-      if (!state || node.nodeValue !== state.last) state = { french: node.nodeValue };
-      state.last = translate(state.french);
+      if (!state || node.nodeValue !== state.last) state = { english: node.nodeValue };
+      state.last = translate(state.english);
       if (node.nodeValue !== state.last) node.nodeValue = state.last;
       textState.set(node, state);
     }
@@ -40,8 +41,8 @@
         if (!el.hasAttribute(key)) continue;
         const value = el.getAttribute(key);
         let state = states[key];
-        if (!state || value !== state.last) state = { french: value };
-        state.last = translate(state.french);
+        if (!state || value !== state.last) state = { english: value };
+        state.last = translate(state.english);
         el.setAttribute(key, state.last);
         states[key] = state;
       }
@@ -55,10 +56,10 @@
       const raw = link.getAttribute('href');
       if (!raw || raw.startsWith('#') || /^(https?:|mailto:|data:)/.test(raw)) continue;
       let state = linkState.get(link);
-      if (!state || raw !== state.last) state = { french: raw };
-      let next = state.french;
+      if (!state || raw !== state.last) state = { english: raw };
+      let next = state.english;
       if (/\.pdf(?:$|[?#])/.test(next)) {
-        if (language === 'en') next = next.replace(/\.pdf(?=$|[?#])/, '.en.pdf');
+        if (language === 'fr') next = next.replace(/\.pdf(?=$|[?#])/, '.fr.pdf');
       } else if (/\.html(?:$|[?#])/.test(next)) {
         const url = new URL(next, document.baseURI);
         url.searchParams.set('lang', language);
@@ -97,7 +98,7 @@
     const requested = new URLSearchParams(location.search).get('lang');
     let saved;
     try { saved = localStorage.getItem(storageKey); } catch {}
-    setLanguage(['fr','en'].includes(requested) ? requested : saved === 'en' ? 'en' : 'fr', false);
+    setLanguage(['fr','en'].includes(requested) ? requested : saved === 'fr' ? 'fr' : 'en', false);
     document.addEventListener('click', event => {
       const button = event.target.closest('[data-language]');
       if (button) setLanguage(button.dataset.language);

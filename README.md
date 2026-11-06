@@ -1,47 +1,49 @@
-# Derrière les flags — Black Alps 2026
+# Behind the Flags — Black Alps 2026
 
-Neuf récits de résolution, expliqués en français avec des schémas progressifs, des preuves locales et des notes orateur.
+Nine challenge write-ups with progressive diagrams, saved evidence and speaker notes. **English is the primary language**, including the published HTML, notes, controls and default PDF downloads.
 
-**[Ouvrir les présentations](https://noeberdoz.github.io/blackalps_2026_writeups/)** · [PDF complet](downloads/Black-Alps-2026.pdf) · [Notes orateur](notes.html) · [Notes PDF](downloads/Notes-orateur.pdf)
+**[Open the presentations](https://noeberdoz.github.io/blackalps_2026_writeups/)** · [Full PDF](downloads/Black-Alps-2026.pdf) · [Speaker notes](notes.html) · [Notes PDF](downloads/Notes-orateur.pdf)
 
-| Challenge | Présentation | Export |
+| Challenge | Presentation | Export |
 | --- | --- | --- |
-| lost_in_embedding | [Animé](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/lost_in_embedding.html) | [PDF](chapters/lost_in_embedding.pdf) |
-| id_please | [Animé](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/id_please.html) | [PDF](chapters/id_please.pdf) |
-| universal_translator | [Animé](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/universal_translator.html) | [PDF](chapters/universal_translator.pdf) |
-| silent_beacon | [Animé](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/silent_beacon.html) | [PDF](chapters/silent_beacon.pdf) |
-| wrong_path | [Animé](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/wrong_path.html) | [PDF](chapters/wrong_path.pdf) |
-| peak_privilege | [Animé](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/peak_privilege.html) | [PDF](chapters/peak_privilege.pdf) |
-| rucher | [Animé](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/rucher.html) | [PDF](chapters/rucher.pdf) |
-| driver_radio | [Animé](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/driver_radio.html) | [PDF](chapters/driver_radio.pdf) |
-| tapo | [Animé](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/tapo.html) | [PDF](chapters/tapo.pdf) |
+| lost_in_embedding | [Animated](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/lost_in_embedding.html) | [PDF](chapters/lost_in_embedding.pdf) |
+| id_please | [Animated](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/id_please.html) | [PDF](chapters/id_please.pdf) |
+| universal_translator | [Animated](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/universal_translator.html) | [PDF](chapters/universal_translator.pdf) |
+| silent_beacon | [Animated](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/silent_beacon.html) | [PDF](chapters/silent_beacon.pdf) |
+| wrong_path | [Animated](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/wrong_path.html) | [PDF](chapters/wrong_path.pdf) |
+| peak_privilege | [Animated](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/peak_privilege.html) | [PDF](chapters/peak_privilege.pdf) |
+| rucher | [Animated](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/rucher.html) | [PDF](chapters/rucher.pdf) |
+| driver_radio | [Animated](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/driver_radio.html) | [PDF](chapters/driver_radio.pdf) |
+| tapo | [Animated](https://noeberdoz.github.io/blackalps_2026_writeups/chapters/tapo.html) | [PDF](chapters/tapo.pdf) |
 
-## Présenter
+## Presenting
 
-Ouvrir `presentation.html`, ou télécharger `downloads/Black-Alps-2026.html` pour un fichier autonome utilisable hors ligne. Aucun package à installer.
+Open `presentation.html`, or download `downloads/Black-Alps-2026.html` for a self-contained offline file. Nothing to install.
 
-Le sélecteur **FR / EN** traduit les slides, les commandes, les notes et les légendes, sans perdre la slide ou l’étape en cours. Le choix est mémorisé dans le navigateur. Un lien `?lang=en` ouvre directement la version anglaise ; les PDF proposés suivent la langue choisie. Les captures restent les preuves originales. Les deux langues sont incluses dans les fichiers HTML autonomes.
+The **EN / FR** switch keeps the current slide and animation step. English opens by default; French remains available as an option. New language choices are remembered in the browser, while explicit `?lang=en` or `?lang=fr` links take precedence. The former French-default preference is not carried over.
 
-[English presentations](https://noeberdoz.github.io/blackalps_2026_writeups/?lang=en) · [English PDF](downloads/Black-Alps-2026.en.pdf) · [English speaker notes](downloads/Notes-orateur.en.pdf)
+Unqualified PDF filenames are English. French exports use `.fr.pdf`; previously shared `.en.pdf` links still work. Both languages are included in the offline HTML files. Evidence screenshots and photographs remain unmodified, with translated captions.
 
-- **Espace / →** : révélation suivante ; **←** : précédente ; **V** : tout révéler sur la slide.
-- **P** : notes dans une fenêtre séparée, à placer sur votre écran privé.
-- **N** : notes de répétition visibles sur l’écran courant.
-- **F** : plein écran ; **O** : sommaire ; **R** : reprendre les étapes de la slide.
-- **D** : aperçu automatique ; **M** : réduire les animations.
+[French presentations](https://noeberdoz.github.io/blackalps_2026_writeups/?lang=fr) · [French PDF](downloads/Black-Alps-2026.fr.pdf) · [French speaker notes](downloads/Notes-orateur.fr.pdf)
 
-Le PDF montre toutes les étapes, sans animations. Les chapitres ont leurs propres PDF et fichiers HTML autonomes.
+- **Space / →**: next reveal; **←**: previous; **V**: reveal the whole slide.
+- **P**: speaker notes in a separate window for your private screen.
+- **N**: rehearsal notes visible on the current screen.
+- **F**: full screen; **O**: contents; **R**: replay the slide.
+- **D**: automatic preview; **M**: reduce motion.
 
-## Sources et attribution
+PDFs show every step without animations. Each chapter also has its own PDF and self-contained HTML file.
 
-Contenu tiré des `JOURNAL.md`, scripts et sorties sauvegardés des challenges. Les notes signalent les reconstructions, captures annotées après l’événement et preuves manquantes. Aucun serveur de challenge contacté, aucun exploit relancé pour fabriquer ces présentations.
+## Sources and attribution
 
-La version enrichie comporte 46 slides, dont 6 pour les embeddings et 9 pour Tapo. Chaque chapitre combine explications progressives, preuves et notes orateur ; les petits exemples inventés sont explicitement signalés.
+The content comes from challenge `JOURNAL.md` files, scripts and saved output. Notes identify reconstructions, screenshots annotated after the event and missing evidence. No challenge servers were contacted and no exploits were rerun to produce these presentations.
 
-Le chapitre Tapo reprend le PowerPoint, ses quatre photographies du matériel et les fichiers fournis ; son flag et sa soumission à la plateforme sont confirmés par l’utilisateur. Son auteur n’est pas précisé.
+There are 46 slides, including six for embeddings and nine for Tapo. Each chapter combines progressive explanations, evidence and speaker notes. Invented teaching examples are explicitly labelled.
 
-Les journaux attribuent `universal_translator` et `silent_beacon` à Codex ; les autres solves des archives initiales à Claude, avec une enquête collective pour `id_please`. Présentations préparées par Codex et ses sous-agents.
+The Tapo chapter uses the supplied PowerPoint, its four hardware photographs and the supplied files. The user confirmed the flag and its platform submission. The original solver is not identified.
 
-La publication contient les supports pédagogiques et preuves sélectionnées. Elle ne contient ni cookies, ni clés de session, ni archives des challenges ou scripts d’exploitation.
+The journals credit Codex with `universal_translator` and `silent_beacon`, and Claude with the other solves in the initial archives, with a shared investigation for `id_please`. These presentations were prepared by Codex and its sub-agents.
 
-GitHub Pages sert la branche `main`, à la racine. Les fichiers HTML/CSS/JS sont directement modifiables ; aucun build n’est nécessaire.
+The published repository contains teaching materials and selected evidence. It does not contain cookies, session keys, challenge archives or exploit scripts.
+
+GitHub Pages serves the root of `main`. The published HTML/CSS/JS files can be edited directly; no build is needed to serve them.
