@@ -20,7 +20,7 @@ Neuf récits de résolution, expliqués en français avec des schémas progressi
 
 Ouvrir `presentation.html`, ou télécharger `downloads/Black-Alps-2026.html` pour un fichier autonome utilisable hors ligne. Aucun package à installer.
 
-- **Espace / →** : révélation suivante ; **←** : précédente.
+- **Espace / →** : révélation suivante ; **←** : précédente ; **V** : tout révéler sur la slide.
 - **P** : notes dans une fenêtre séparée, à placer sur votre écran privé.
 - **N** : notes de répétition visibles sur l’écran courant.
 - **F** : plein écran ; **O** : sommaire ; **R** : reprendre les étapes de la slide.
@@ -32,7 +32,9 @@ Le PDF montre toutes les étapes, sans animations. Les chapitres ont leurs propr
 
 Contenu tiré des `JOURNAL.md`, scripts et sorties sauvegardés des challenges. Les notes signalent les reconstructions, captures annotées après l’événement et preuves manquantes. Aucun serveur de challenge contacté, aucun exploit relancé pour fabriquer ces présentations.
 
-Le chapitre Tapo reprend le PowerPoint et les fichiers fournis ; son flag et sa soumission à la plateforme sont confirmés par l’utilisateur. Son auteur n’est pas précisé.
+La version enrichie comporte 46 slides, dont 6 pour les embeddings et 9 pour Tapo. Chaque chapitre combine explications progressives, preuves et notes orateur ; les petits exemples inventés sont explicitement signalés.
+
+Le chapitre Tapo reprend le PowerPoint, ses quatre photographies du matériel et les fichiers fournis ; son flag et sa soumission à la plateforme sont confirmés par l’utilisateur. Son auteur n’est pas précisé.
 
 Les journaux attribuent `universal_translator` et `silent_beacon` à Codex ; les autres solves des archives initiales à Claude, avec une enquête collective pour `id_please`. Présentations préparées par Codex et ses sous-agents.
 
