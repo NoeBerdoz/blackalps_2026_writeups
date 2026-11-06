@@ -32,7 +32,7 @@ Le PDF montre toutes les étapes, sans animations. Les chapitres ont leurs propr
 
 Contenu tiré des `JOURNAL.md`, scripts et sorties sauvegardés des challenges. Les notes signalent les reconstructions, captures annotées après l’événement et preuves manquantes. Aucun serveur de challenge contacté, aucun exploit relancé pour fabriquer ces présentations.
 
-Le chapitre Tapo reprend le PowerPoint et les fichiers fournis ; son flag est retrouvé, sa soumission non confirmée. Son auteur n’est pas précisé.
+Le chapitre Tapo reprend le PowerPoint et les fichiers fournis ; son flag et sa soumission à la plateforme sont confirmés par l’utilisateur. Son auteur n’est pas précisé.
 
 Les journaux attribuent `universal_translator` et `silent_beacon` à Codex ; les autres solves des archives initiales à Claude, avec une enquête collective pour `id_please`. Présentations préparées par Codex et ses sous-agents.
 
