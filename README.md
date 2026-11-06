@@ -20,6 +20,10 @@ Neuf récits de résolution, expliqués en français avec des schémas progressi
 
 Ouvrir `presentation.html`, ou télécharger `downloads/Black-Alps-2026.html` pour un fichier autonome utilisable hors ligne. Aucun package à installer.
 
+Le sélecteur **FR / EN** traduit les slides, les commandes, les notes et les légendes, sans perdre la slide ou l’étape en cours. Le choix est mémorisé dans le navigateur. Un lien `?lang=en` ouvre directement la version anglaise ; les PDF proposés suivent la langue choisie. Les captures restent les preuves originales. Les deux langues sont incluses dans les fichiers HTML autonomes.
+
+[English presentations](https://noeberdoz.github.io/blackalps_2026_writeups/?lang=en) · [English PDF](downloads/Black-Alps-2026.en.pdf) · [English speaker notes](downloads/Notes-orateur.en.pdf)
+
 - **Espace / →** : révélation suivante ; **←** : précédente ; **V** : tout révéler sur la slide.
 - **P** : notes dans une fenêtre séparée, à placer sur votre écran privé.
 - **N** : notes de répétition visibles sur l’écran courant.
